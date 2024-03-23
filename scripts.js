@@ -26,7 +26,7 @@ function cadastrarNovoProduto() {
         currency: 'BRL'
     });
 
-    // Dentro da função também cria o objeto de novo produto com os dados formatados
+    // Dentro da função também criei um objeto de novo produto com os dados formatados
     const novoProduto = {
         nome: nomeProduto.value,
         sku: skuProduto.value,
