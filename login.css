@@ -1,0 +1,39 @@
+.loginbox{
+    background-color: white;
+    box-shadow: 0 4px 17px #0000004d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px
+}
+
+.logobox {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+button {
+    margin: 5px;
+    padding: 15px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    
+}
+
