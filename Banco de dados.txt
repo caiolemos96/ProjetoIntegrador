@@ -10,9 +10,9 @@ Terminal da Open Git Bash here
 
 a. git status ==> exibe as condições do diretório de trabalho e da área de staging. Ele permite que você veja quais alterações foram despreparadas, quais não foram e quais arquivos não estão sendo monitorados pelo Git.
 
-b. git add ==> Coloca no Stage apenas arquivos novos e modificados
+b. git add . ==> Coloca no Stage apenas arquivos novos e modificados
 
-c. git comit -m "Primeira atualização do Repositório" ==> O commit é um comando importantíssimo. Ele leva as mudanças de um ambiente local para o repositório no git, permitindo ainda a inserção de uma mensagem descritiva. Assim, a cada mudança ou finalização de uma tarefa, a pessoa desenvolvedora pode submeter seus feitos e deixar claro para as outras pessoas o que ela fez.
+c. git commit -m "Primeira atualização do Repositório" ==> O commit é um comando importantíssimo. Ele leva as mudanças de um ambiente local para o repositório no git, permitindo ainda a inserção de uma mensagem descritiva. Assim, a cada mudança ou finalização de uma tarefa, a pessoa desenvolvedora pode submeter seus feitos e deixar claro para as outras pessoas o que ela fez.
 
 d. git push origin main ==> O comando git push permite que você envie (ou em tradução literal, empurre) os commits de sua branch e repositório Git local para o seu repositório remoto. Para poder fazer um git push para seu repositório remoto, você deve garantir que todas as suas alterações no repositório local sejam confirmadas.
 
