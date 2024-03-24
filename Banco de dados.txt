@@ -16,6 +16,11 @@ c. git commit -m "Primeira atualização do Repositório" ==> O commit é um com
 
 d. git push origin main ==> O comando git push permite que você envie (ou em tradução literal, empurre) os commits de sua branch e repositório Git local para o seu repositório remoto. Para poder fazer um git push para seu repositório remoto, você deve garantir que todas as suas alterações no repositório local sejam confirmadas.
 
+videos de referência: Acesso em 24 mar. 2024.
+
+==> <https://www.youtube.com/watch?v=Ckig8H_h538&list=PLR8JXremim5BNbLUpzYEi3Xnb790ttsE1&index=2>
+==> <https://www.youtube.com/watch?v=o_ECnZ8zk_Q&list=PLR8JXremim5BNbLUpzYEi3Xnb790ttsE1&index=3>
+
 
 2. VSCode
 
@@ -34,11 +39,40 @@ login em maquinas diferentes
 a. $ git config user.name "usar o nome do repositório"
 b. $ git config user.email "fulanodetal@gmail.com"
 
+video de referência: Acesso em 24 mar.2024. 
+
+==> <https://www.youtube.com/watch?v=9miOzgB4KC0>
+
+ 
 3. Firebase
 
-Comandos usados:
+Procedimentos de Hospedagem do site:
+
+a. Instalar o Node.js
+b. login no firebase com conta google
+c. criar projeto no firebase (com um nome unico que será o nome do site)
+d. criar uma pasta no disco local c:
+e. acessar essa pasta pelo prompt de comando
+f. Hospedar o site com o Firebase Hosting
+
+Prompt de comando:
+
+a. npm install -g firebase -tools => instalar a CLI ou atualizar sua versão
+b. firebase login => login no google para inicializar seu projeto
+c. firebase init => inicializar firebase
+d. firebase deploy => implantar no firebase hosting
+
+video de referência: Acesso em: 24 mar. 2024.
+
+==> <https://www.youtube.com/watch?v=C_UUCf6g-ZQ&t=15s>
+
+3.1 Firebase: Authenticação de login
+
+Procedimentos:
 
 a. 
+
+
 
 
 
