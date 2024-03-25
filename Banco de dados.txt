@@ -8,13 +8,13 @@ Comandos usados:
 
 Terminal da Open Git Bash here
 
-a. git status ==> exibe as condições do diretório de trabalho e da área de staging. Ele permite que você veja quais alterações foram despreparadas, quais não foram e quais arquivos não estão sendo monitorados pelo Git.
+a. $ git status ==> exibe as condições do diretório de trabalho e da área de staging. Ele permite que você veja quais alterações foram despreparadas, quais não foram e quais arquivos não estão sendo monitorados pelo Git.
 
-b. git add . ==> Coloca no Stage apenas arquivos novos e modificados
+b. $ git add . ==> Coloca no Stage apenas arquivos novos e modificados
 
-c. git commit -m "Primeira atualização do Repositório" ==> O commit é um comando importantíssimo. Ele leva as mudanças de um ambiente local para o repositório no git, permitindo ainda a inserção de uma mensagem descritiva. Assim, a cada mudança ou finalização de uma tarefa, a pessoa desenvolvedora pode submeter seus feitos e deixar claro para as outras pessoas o que ela fez.
+c. $ git commit -m "Primeira atualização do Repositório" ==> O commit é um comando importantíssimo. Ele leva as mudanças de um ambiente local para o repositório no git, permitindo ainda a inserção de uma mensagem descritiva. Assim, a cada mudança ou finalização de uma tarefa, a pessoa desenvolvedora pode submeter seus feitos e deixar claro para as outras pessoas o que ela fez.
 
-d. git push origin main ==> O comando git push permite que você envie (ou em tradução literal, empurre) os commits de sua branch e repositório Git local para o seu repositório remoto. Para poder fazer um git push para seu repositório remoto, você deve garantir que todas as suas alterações no repositório local sejam confirmadas.
+d. $ git push origin main ==> O comando git push permite que você envie (ou em tradução literal, empurre) os commits de sua branch e repositório Git local para o seu repositório remoto. Para poder fazer um git push para seu repositório remoto, você deve garantir que todas as suas alterações no repositório local sejam confirmadas.
 
 videos de referência: Acesso em 24 mar. 2024.
 
@@ -57,16 +57,87 @@ f. Hospedar o site com o Firebase Hosting
 
 Prompt de comando:
 
-a. npm install -g firebase -tools => instalar a CLI ou atualizar sua versão
-b. firebase login => login no google para inicializar seu projeto
-c. firebase init => inicializar firebase
-d. firebase deploy => implantar no firebase hosting
+a. npm install -g firebase-tools   => instalar a CLI ou atualizar sua versão
+b. firebase login   => login no google para inicializar seu projeto
+c. firebase init   => inicializar firebase
+d. firebase deploy   => implantar no firebase hosting
+e. apelido do app (farmaciajobestoque)
+
+3.1 Adicionar SDK do firebase
+
+* Usar o npm
+
+$ npm install firebase
+
+Depois inicialize o Firebase e comece a usar os SDKa dos produtos.
+
+// Importe as funções necessárias dos SDKs necessários
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Adicionar SDKs para produtos Firebase que você deseja usar.
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Configuração do Firebase do seu aplicativo da web
+// Para Firebase JS SDK v7.20.0 e versões posteriores, measurementId é opcional
+const firebaseConfig = {
+  apiKey: "AIzaSyDcRgtJL9y91gXaK3rOQ3gX3fOLYhXktQg",
+  authDomain: "farmaciajobsestoque.firebaseapp.com",
+  projectId: "farmaciajobsestoque",
+  storageBucket: "farmaciajobsestoque.appspot.com",
+  messagingSenderId: "123767631961",
+  appId: "1:123767631961:web:4fbd8eb213b463c48e8148",
+  measurementId: "G-D0PHG80EK8"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+* Usar a tag <script>
+
+e você não utiliza ferramentas de builds, use essa opção para adicionar e utilizar o SDK do Firebase para JavaScript. Essa opção é recomendada no começo, mas não para apps em produção. Saiba mais.
+
+Copie e cole esses scripts na parte de baixo da tag <body>, mas antes de usar qualquer serviço do Firebase:
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDcRgtJL9y91gXaK3rOQ3gX3fOLYhXktQg",
+    authDomain: "farmaciajobsestoque.firebaseapp.com",
+    projectId: "farmaciajobsestoque",
+    storageBucket: "farmaciajobsestoque.appspot.com",
+    messagingSenderId: "123767631961",
+    appId: "1:123767631961:web:4fbd8eb213b463c48e8148",
+    measurementId: "G-D0PHG80EK8"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+
+Implantar no Firebase Hosting
+
+Quando tudo estiver pronto, implante seu app da Web
+Inclua seus arquivos estáticos (por exemplo, HTML, CSS, JS) no diretório de implantação do app (o padrão é "público"). Em seguida, execute este comando no diretório raiz dele:
+
+$ firebase deploy
+
+Após a implantação, confira seu app em farmaciajobsestoque.web.app
 
 video de referência: Acesso em: 24 mar. 2024.
 
 ==> <https://www.youtube.com/watch?v=C_UUCf6g-ZQ&t=15s>
 
-3.1 Firebase: Authenticação de login
+3.2 Firebase: Authenticação de login
 
 Procedimentos:
 
