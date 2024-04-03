@@ -5,28 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="login.css">
-    <script type="text/javascript" src="scripts.js" defer></script>
     <title>Pagina de Login</title>
 </head>
 <body>
+
     <div class="logobox"><img src="/ProjetoIntegrador/imgs/cart.png"></div>
     <form action="" class="loginbox">
         <label>Email</label>
-        <input type="email" name="email" placeholder="Digite seu E-mail">
+        <input type="email" id="email" name="email" placeholder="Digite seu E-mail">
         <label>Senha</label>
-        <input type="password" name="password" placeholder="Digite sua Senha">
-        <button type="submit">Recuperar Senha</button>
-        <button type="submit">Entrar</button>
-        <button type="button">Registrar</button>
-
+        <input type="password" id="password" name="password" placeholder="Digite sua Senha">
+        <button type="button" onclick="recuperarSenha()">Recuperar Senha</button>
+        <button type="button" onclick="login()">Entrar</button>
     </form>
 
-    <div class="wave-container">
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-    </div>
-    <div class="content">
-        
+    
+    
+    <script src="login.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-auth-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyAltpwSeAfhxz8cJ_MO777hp5NwFjzxvK8",
+            authDomain: "projetointegrador-9d4c5.firebaseapp.com",
+            projectId: "projetointegrador-9d4c5",
+            storageBucket: "projetointegrador-9d4c5.appspot.com",
+            messagingSenderId: "389626965820",
+            appId: "1:389626965820:web:75fe5dbb8592347e96f839",
+            measurementId: "G-T6Z5N5LQ6B"
+         };
+         firebase.initializeApp(firebaseConfig);
+    </script>
 </body>
 </html>
