@@ -5,13 +5,11 @@
 
 body {
     background-color: #0BD692;
-
 }
 
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #0BD692;
-
 }
 
 p {
@@ -25,43 +23,70 @@ input {
     padding: 5px;
     width: 100%;
     text-align: center;
-    display:flex;
-    flex-direction: column;
 }
 
-.cabecalho{
+.cabecalho {
     top: 0;
     width: 100%;
     background: #000000;
     box-shadow: 0 4px 17px #0000004d;
-    padding: 5vh;
+    padding: 10px;
     text-align: center;
+    display: flex;
+    justify-content: space-between; /* Ajusta para alinhar os itens do cabeçalho */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.logocelbox {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center; /* Alinha a imagem verticalmente */
+}
+
+img {
+    width: 100px; /* Ajusta o tamanho da imagem */
 }
 
 .menu-btn {
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    margin-top: 20px; /* Adiciona margem superior para separar do cabeçalho */
 }
+
 .botao {
     margin: 15px;
     padding: 15px;
     border: 0;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    
+    cursor: pointer;
 }
-.cadastro-produto-div{
+
+.cadastro-produto-div {
     background-color: white;
     box-shadow: 0 4px 17px #0000004d;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     border-radius: 15px;
     padding: 50px;
+    margin: 20px auto; /* Centraliza horizontalmente */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 400px
+    width: 400px;
+}
+
+.btn-sair {
+    margin: 15px;
+    padding: 10px 15px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.3);
+}
+
+.btn-sair i {
+    margin-right: 5px;
 }

@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="cadastros.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Gestão de Estoque - PI Univespp</title>
 </head>
 <body>
     <header class="cabecalho">
-            <h1>Sistema de Gestão de Estoque</h1>
+        <div class="logocelbox"><img src="/ProjetoIntegrador/imgs/logostocksage.png"></div>
+        <div class="logocel"><h1>Sistema de Gestão de Estoque</h1></div>
+        <div class="divSair">
+            <button type="button" class="btn-sair" onclick="logout()">
+                <i class="fas fa-sign-out-alt"></i> Sair
+            </button>
+        </div>
+            
     </header>
 
     <section class="menu-btn">
-            <button class="botao" id="cadastros" >Cadastrar produtos</button>
-             <button class="botao" id="btn-verProduto">Produtos cadastrados</button>
-             <button class="botao" id="btn-expedicao">Expedição de Produtos</button>
+            <button type="button" class="botao" id="cadastros" >Cadastrar produtos</button>
+             <button type="button" class="botao" id="btn-verProduto">Produtos cadastrados</button>
+             <button type="button" class="botao" id="btn-expedicao">Expedição de Produtos</button>
     </section>
     <div class="cadastro-produto-div">
         <p>
@@ -43,9 +50,15 @@
             <input type="number" name="estoque" placeholder="Digite a quantidade de produtos em estoque" id="qtd-estoque">
         </p>
 
-        <button class="botao" id="btn-cadastro-produto" >Cadastrar produto</button>
+        <button class="botao" id="btn-cadastro-produto">Cadastrar produto</button>
 
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore-compat.js"></script>
+    <script src="firebase-init.js"></script>
+    <script src="cadastros.js"></script>
+    <script src="auth-guard.js"></script>
 </body>
 </html>

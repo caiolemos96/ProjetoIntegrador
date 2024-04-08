@@ -1,3 +1,9 @@
+firebase.auth().onAuthStateChanged(user => {
+    if (user) {
+        window.location.href = "cadastros.html";
+    }
+})
+
 function login() {
     //puxando os valores dos campos email e senha
     let email = document.getElementById('email').value;

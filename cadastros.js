@@ -34,9 +34,18 @@ function cadastrarNovoProduto() {
         validade: validadeProduto.value,
         quantidade: qtdEstoque.value
     };
+    const db = firebase.firestore();
+    db.collection('produtos').add(novoProduto).then(response => {
+        alert('Produto cadastrado com sucesso!');
+    }).catch(error => { console.error(error)
+        alert("Produto não cadastrado");
+    });
     
-    alert('Produto cadastrado com sucesso!');
    
+}
 
-
+function logout() {
+    firebase.auth().signOut().then(() => {
+        window.location.href = "login.html";
+    })
 }
