@@ -1,0 +1,30 @@
+p {
+    cursor: pointer;
+    background: white;
+}
+
+p:hover{
+    color: red;
+}
+
+/* Estilos para os produtos */
+.produto {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    margin: 5px 0;
+}
+
+/* Estilos para tornar responsivo */
+@media (min-width: 768px) {
+    .produto {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

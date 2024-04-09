@@ -25,6 +25,13 @@ input {
     text-align: center;
 }
 
+a {
+    background-color: #fff;
+    color: #000000;
+    text-decoration:none; 
+}
+
+
 .cabecalho {
     top: 0;
     width: 100%;

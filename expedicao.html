@@ -20,45 +20,17 @@
     </header>
 
     <section class="menu-btn">
-            <a href="cadastros.html" class="botao" id="cadastros">Cadastrar Produtos</a>
-            <a href="produtos.html" class="botao" id="btn-verProdutos">Produtos cadastrados</a>
-            <a href="expedicao.html" class="botao" id="btn-expedicao">Expedição de Produtos</a>
+        <a href="cadastros.html" class="botao" id="cadastros">Cadastrar Produtos</a>
+        <a href="produtos.html" class="botao" id="btn-verProdutos">Produtos cadastrados</a>
+        <a href="expedicao.html" class="botao" id="btn-expedicao">Expedição de Produtos</a>
     </section>
-    <div class="cadastro-produto-div">
-        <p>
-            Nome do Produto
-            <input type="text" name="nome" placeholder="Digite o nome do produto" id="nome-produto">
-        </p>
-
-        <p>
-            Código do produto (SKU)
-            <input type="text" name="sku" placeholder="Digite o SKU do produto" id="sku-produto">
-        </p>
-        
-        <p>
-            Custo do Produto
-            <input type="number" nome="custo" placeholder="Digite o custo do produto" id="custo-produto">
-        </p>
-
-        <p>
-            Validade do Produto
-            <input type="date" nome="data" id="validade-produto">
-        </p>
-
-        <p>
-            Quantidade em estoque
-            <input type="number" name="estoque" placeholder="Digite a quantidade de produtos em estoque" id="qtd-estoque">
-        </p>
-
-        <button class="botao" id="btn-cadastro-produto">Cadastrar produto</button>
-
-    </div>
+    
 
     <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore-compat.js"></script>
     <script src="firebase-init.js"></script>
-    <script src="cadastros.js"></script>
+    <script src="produtos.js"></script>
     <script src="auth-guard.js"></script>
 </body>
 </html>
