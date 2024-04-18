@@ -17,18 +17,12 @@ function cadastrarNovoProduto() {
         alert('Por favor, preencha todos os campos.');
         return;
     }
-
-    // Criei uma variavel formatar o campo de custo para formato de dinheiro 
-    const custoFormatado = parseFloat(custoProduto.value).toLocaleString('pt-BR', {
-        style: 'currency',
-        currency: 'BRL'
-    });
-
+    
     // Dentro da função também criei um objeto de novo produto com os dados formatados
     const novoProduto = {
         nome: nomeProduto.value,
         sku: skuProduto.value,
-        custo: custoFormatado,
+        custo: custoProduto.value,
         validade: validadeProduto.value,
         quantidade: qtdEstoque.value
     };
